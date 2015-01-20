@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC412D6C1A6D2F2000C3AF05 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DC412D6A1A6D2F2000C3AF05 /* first.png */; };
-		DC412D6D1A6D2F2000C3AF05 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DC412D6B1A6D2F2000C3AF05 /* second.png */; };
+		B76CFCAB1A6E613100D99161 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = B76CFCAA1A6E613100D99161 /* Images */; };
 		DC412D701A6D34C200C3AF05 /* chickenDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */; };
 		DCEAD3B51A6D1966004EA87D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEAD3B41A6D1966004EA87D /* Foundation.framework */; };
 		DCEAD3B71A6D1966004EA87D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEAD3B61A6D1966004EA87D /* CoreGraphics.framework */; };
@@ -38,8 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC412D6A1A6D2F2000C3AF05 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		DC412D6B1A6D2F2000C3AF05 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B76CFCAA1A6E613100D99161 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		DC412D6E1A6D34C200C3AF05 /* chickenDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chickenDetails.h; sourceTree = "<group>"; };
 		DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chickenDetails.m; sourceTree = "<group>"; };
 		DCEAD3B11A6D1966004EA87D /* Lucky Chicken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lucky Chicken.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,19 +86,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC412D691A6D2F2000C3AF05 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				DC412D6A1A6D2F2000C3AF05 /* first.png */,
-				DC412D6B1A6D2F2000C3AF05 /* second.png */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		DCEAD3A81A6D1966004EA87D = {
 			isa = PBXGroup;
 			children = (
-				DC412D691A6D2F2000C3AF05 /* Images */,
+				B76CFCAA1A6E613100D99161 /* Images */,
 				DCEAD3BA1A6D1966004EA87D /* Lucky Chicken */,
 				DCEAD3D91A6D1966004EA87D /* Lucky ChickenTests */,
 				DCEAD3B31A6D1966004EA87D /* Frameworks */,
@@ -250,12 +239,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76CFCAB1A6E613100D99161 /* Images in Resources */,
 				DCEAD3EA1A6D1CC7004EA87D /* chickens.json in Resources */,
 				DCEAD3CD1A6D1966004EA87D /* Images.xcassets in Resources */,
 				DCEAD3BF1A6D1966004EA87D /* InfoPlist.strings in Resources */,
-				DC412D6D1A6D2F2000C3AF05 /* second.png in Resources */,
 				DCEAD3C81A6D1966004EA87D /* Main.storyboard in Resources */,
-				DC412D6C1A6D2F2000C3AF05 /* first.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

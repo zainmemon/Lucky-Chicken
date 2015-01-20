@@ -3,11 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "first.png"
+      "filename" : "henny.jpg"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "henny-1.jpg"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "henny-2.jpg"
     }
   ],
   "info" : {

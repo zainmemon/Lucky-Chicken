@@ -64,11 +64,17 @@
         
         y+= gap;
         
-        [self makeLabel:y label:@"Leg Color Rating" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorPointsYelloWhite"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
+        int legColorCount = [[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorRating"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]count];
         
-        y+= gap;
+        NSLog(@"The leg color count is %d",legColorCount);
         
-        [self makeLabel:y label:@"Leg Colour GBB" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorPointsGreenBlueBlack"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
+        for(int k = 0; k < legColorCount; k++)
+        {
+            NSArray* legColorsArray = [[[[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]objectAtIndex:[self.chickenID intValue]] valueForKey:@"legColorRating"]objectAtIndex:i] valueForKey:[NSString stringWithFormat:@"%d", k]] objectAtIndex:k] componentsSeparatedByString: @":"];
+            [self makeLabel:y label:[legColorsArray objectAtIndex:0] value:[legColorsArray objectAtIndex:1]];
+            
+            y+=gap;
+        }
         
         y+= gap+10;
         
@@ -81,13 +87,13 @@
 
 -(void)makeLabel:(int)Yposition label:(NSString*)label value:(NSString*)value
 {
-    UILabel *jsonLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,Yposition,150,20)];
+    UILabel *jsonLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,Yposition,130,20)];
     [jsonLabel setText:label];
     [jsonLabel setTextColor:[UIColor blackColor]];
     [jsonLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.f]];
     [scroll addSubview:jsonLabel];
     
-    UILabel *jsonValue = [[UILabel alloc]initWithFrame:CGRectMake(200,Yposition,100,20)];
+    UILabel *jsonValue = [[UILabel alloc]initWithFrame:CGRectMake(170,Yposition,130,20)];
     [jsonValue setTextColor:[UIColor blackColor]];
     [jsonValue setText:value];
     [jsonValue setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.f]];
