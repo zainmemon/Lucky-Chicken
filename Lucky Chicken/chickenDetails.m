@@ -50,49 +50,21 @@
     
     for (int i=0; i < luckyDayCount ; i++)
     {
-        [self makeLabel:y label:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"name"]objectAtIndex:i] objectAtIndex:[self.chickenID intValue]] value:@"value"];
+        [self makeLabel:y label:@"Name" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"name"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
         
-//        UILabel *first_label = [[UILabel alloc]initWithFrame:CGRectMake(20,y,100,40)];
-//        [first_label setText:@"first Text"];
-//        [first_label setTextColor:[UIColor blackColor]];
-//        [scroll addSubview:first_label];
-//            
-//        UILabel *first_value = [[UILabel alloc]initWithFrame:CGRectMake(100,y,100,40)];
-//        [first_value setTextColor:[UIColor blackColor]];
-//        [first_value setText:@"First Label"];
-//        [scroll addSubview:first_value];
+        y+=40;
         
-//        UILabel *second_label = [[UILabel alloc]initWithFrame:CGRectMake(20,y,100,40)];
-//        [first_label setText:@"first Text"];
-//        [first_label setTextColor:[UIColor blackColor]];
-//        [scroll addSubview:first_label];
-//        
-//        UILabel *second_value = [[UILabel alloc]initWithFrame:CGRectMake(100,y,100,40)];
-//        [first_value setTextColor:[UIColor blackColor]];
-//        [first_value setText:@"First Label"];
-//        [scroll addSubview:first_value];
-//        
-//        UILabel *third_label = [[UILabel alloc]initWithFrame:CGRectMake(20,y,100,40)];
-//        [first_label setText:@"first Text"];
-//        [first_label setTextColor:[UIColor blackColor]];
-//        [scroll addSubview:first_label];
-//        
-//        UILabel *third_value = [[UILabel alloc]initWithFrame:CGRectMake(100,y,100,40)];
-//        [first_value setTextColor:[UIColor blackColor]];
-//        [first_value setText:@"First Label"];
-//        [scroll addSubview:first_value];
-//        
-//        UILabel *fourth_label = [[UILabel alloc]initWithFrame:CGRectMake(20,y,100,40)];
-//        [first_label setText:@"first Text"];
-//        [first_label setTextColor:[UIColor blackColor]];
-//        [scroll addSubview:first_label];
-//        
-//        UILabel *fourth_value = [[UILabel alloc]initWithFrame:CGRectMake(100,y,100,40)];
-//        [first_value setTextColor:[UIColor blackColor]];
-//        [first_value setText:@"First Label"];
-//        [scroll addSubview:first_value];
+        [self makeLabel:y label:@"Feather Color Rating" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"featureColorPoints"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
         
-        y+=50;
+        y+=40;
+        
+        [self makeLabel:y label:@"Leg Color Rating" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorPointsYelloWhite"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
+        
+        y+=40;
+        
+        [self makeLabel:y label:@"Leg Colour GBB" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorPointsGreenBlueBlack"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
+        
+        y+=40;
         
     }
     
@@ -104,12 +76,12 @@
 
 -(void)makeLabel:(int)Yposition label:(NSString*)label value:(NSString*)value
 {
-    UILabel *fourth_label = [[UILabel alloc]initWithFrame:CGRectMake(20,Yposition,100,40)];
+    UILabel *fourth_label = [[UILabel alloc]initWithFrame:CGRectMake(20,Yposition,150,30)];
     [fourth_label setText:label];
     [fourth_label setTextColor:[UIColor blackColor]];
     [scroll addSubview:fourth_label];
     
-    UILabel *fourth_value = [[UILabel alloc]initWithFrame:CGRectMake(150,Yposition,100,40)];
+    UILabel *fourth_value = [[UILabel alloc]initWithFrame:CGRectMake(200,Yposition,100,30)];
     [fourth_value setTextColor:[UIColor blackColor]];
     [fourth_value setText:value];
     [scroll addSubview:fourth_value];
