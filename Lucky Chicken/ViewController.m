@@ -15,6 +15,8 @@
     NSString *chicken_id;
     UIButton *button;
     NSString *tag;
+    int screenWidth;
+    int screenHeight;
 }
 
 @end
@@ -27,8 +29,11 @@ static NSMutableArray *chickensArray;
 {
     [super viewDidLoad];
     
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    screenWidth = screenRect.size.width;
+    screenHeight = screenRect.size.height;
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"chickens" ofType:@"json"];
-  
     NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     
     if (!myJSON) {
@@ -58,7 +63,7 @@ static NSMutableArray *chickensArray;
 -(void)generate_views
 {
     
-    CGRect rect = CGRectMake(0,80,320,480);
+    CGRect rect = CGRectMake(0,20,320,screenHeight-50);
     scroll = [[UIScrollView alloc] initWithFrame:rect];
     
     //loop for open
@@ -70,7 +75,7 @@ static NSMutableArray *chickensArray;
     {
         if((i>0) && (i%2==0))
         {
-            y+=120;
+            y+=125;
             x=40;
         }
         else
@@ -98,14 +103,18 @@ static NSMutableArray *chickensArray;
         button.tag = value;
         [scroll addSubview:button];
         
-        UILabel *chikenBreedLabel = [[UILabel alloc]initWithFrame:CGRectMake(x+20, y+105, 100, 10)];
+        UILabel *chikenBreedLabel = [[UILabel alloc]initWithFrame:CGRectMake(x, y+105, 100, 13)];
         NSString *chickenBreedString = [[chickensArray valueForKey:@"breed"] objectAtIndex:i];
         chikenBreedLabel.text = chickenBreedString;
+        chikenBreedLabel.textAlignment = NSTextAlignmentCenter;
         chikenBreedLabel.textColor= [UIColor blackColor];
         [chikenBreedLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:11.f]];
         [scroll addSubview:chikenBreedLabel];
-    
     }
+    
+    scroll.contentSize = CGSizeMake(320, y+120);
+    scroll.showsHorizontalScrollIndicator = YES;
+    scroll.showsVerticalScrollIndicator = YES;
 }
 
 -(void)tapDetected:(id)sender{

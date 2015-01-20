@@ -53,7 +53,7 @@
     scroll = [[UIScrollView alloc] initWithFrame:rect];
     int y = 0;
     int gap = 25;
-    
+    int legColorCount = 0;
     for (int i=0; i < luckyDayCount ; i++)
     {
         [self makeLabel:y label:@"Name" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"name"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
@@ -64,7 +64,7 @@
         
         y+= gap;
         
-        int legColorCount = [[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorRating"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]count];
+        legColorCount = [[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorRating"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]count];
         
         NSLog(@"The leg color count is %d",legColorCount);
         
@@ -80,7 +80,7 @@
         
     }
     
-    scroll.contentSize = CGSizeMake(320, (luckyDayCount * 105));
+    scroll.contentSize = CGSizeMake(320, y-30);
     scroll.showsHorizontalScrollIndicator = YES;
     scroll.showsVerticalScrollIndicator = YES;
 }
