@@ -1,76 +1,295 @@
 [
-{
-    "sno":"0",
-    "breed": "Blue Miner",
-    "color": "Blue/Abuhin/Abuhon",
-    "picture":"first",
-    "luckyDay":[
-        {
-            "no":"1",
-            "name":"Full Moon",
-            "featureColorPoints":"12",
-            "legColorPointsYelloWhite":"10",
-            "legColorPointsGreenBlueBlack":"6"
-        },
-        {
-            "no":"2",
-            "name":"Last Quarter",
-            "featureColorPoints":"11",
-            "legColorPointsYelloWhite":"17",
-            "legColorPointsGreenBlueBlack":"3"
-        }
-    ]
-},
-{
-    "sno":"1",
-    "breed": "Lemon 84",
-    "color": "Red/Pula Matingkad/Puwa Hayag",
-    "picture":"second",
-    "luckyDay":[
-        {
-            "no":"1",
-            "name":"Full Moon",
-            "featureColorPoints":"12",
-            "legColorPointsYelloWhite":"10",
-            "legColorPointsGreenBlueBlack":"6"
-        },
-        {
-            "no":"2",
-            "name":"Last Quarter",
-            "featureColorPoints":"11",
-            "legColorPointsYelloWhite":"17",
-            "legColorPointsGreenBlueBlack":"3"
-        },
-        {
-            "no":"3",
-            "name":"Third Quarter",
-            "featureColorPoints":"17",
-            "legColorPointsYelloWhite":"21",
-            "legColorPointsGreenBlueBlack":"20"
-        }
-    ]
-},
-{
- "sno":"2",
- "breed": "Lemon 84",
- "color": "Red/Pula Matingkad/Puwa Hayag",
- "picture":"second",
- "luckyDay":[
-             {
-             "no":"1",
-             "name":"Full Moon",
-             "featureColorPoints":"12",
-             "legColorPointsYelloWhite":"10",
-             "legColorPointsGreenBlueBlack":"6"
-             },
-             {
-             "no":"2",
-             "name":"Last Quarter",
-             "featureColorPoints":"11",
-             "legColorPointsYelloWhite":"17",
-             "legColorPointsGreenBlueBlack":"3"
-             }
+    {
+        "sno": "0",
+        "breed": "Blue",
+        "color": "Blue/Abuhin/Abuhon",
+        "picture": "blue",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "Full Moon",
+                "featureColorPoints": "12",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:10"
+                    },
+                    {
+                        "1": "Green Or Black:6"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "Last Quarter",
+                "featureColorPoints": "11",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:17"
+                    },
+                    {
+                        "1": "Green Or Black:3"
+                    }
+                ]
+            }
         ]
- }
-
+    },
+    {
+        "sno": "1",
+        "breed": "Lemon",
+        "color": "Lemon Red/Pula Matingkad/Puwa nga Hayag",
+        "picture": "lemon",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "Full Moon",
+                "featureColorPoints": "14",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:10"
+                    },
+                    {
+                        "1": "Green Or Black:6"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "First Quarter",
+                "featureColorPoints": "10",
+                "legColorRating": [
+                    {
+                        "0": "Green Or White:14"
+                    },
+                    {
+                        "1": "Yellow Or Black:2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sno": "2",
+        "breed": "Brown Red",
+        "color": "Brownred/Alimbuyugin/Buyugon",
+        "picture": "brownred",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "Full Moon",
+                "featureColorPoints": "14",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:10"
+                    },
+                    {
+                        "1": "Green Or Black:6"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "First Quarter",
+                "featureColorPoints": "10",
+                "legColorRating": [
+                    {
+                        "0": "Green Or White:14"
+                    },
+                    {
+                        "1": "Yellow Or Black:2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sno": "3",
+        "breed": "Ginger",
+        "color": "Bulik Pula/Balao",
+        "picture": "ginger",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "New Moon",
+                "featureColorPoints": "19",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:18"
+                    },
+                    {
+                        "1": "Green Or Black:12"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "First Quarter",
+                "featureColorPoints": "12",
+                "legColorRating": [
+                    {
+                        "0": "Green Or White:14"
+                    },
+                    {
+                        "1": "Yellow Or Black:2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sno": "4",
+        "breed": "Henny",
+        "color": "Binabae/Binabayi",
+        "picture": "henny",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "First Quarter",
+                "featureColorPoints": "14",
+                "legColorRating": [
+                    {
+                        "0": "Green Or White:14"
+                    },
+                    {
+                        "1": "Yellow Or Black:2"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "New Moon",
+                "featureColorPoints": "12",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:18"
+                    },
+                    {
+                        "1": "Green Or Black:12"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sno": "5",
+        "breed": "Spangle",
+        "color": "Lasak/Bulanting",
+        "picture": "spangle",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "New Moon",
+                "featureColorPoints": "12",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:18"
+                    },
+                    {
+                        "1": "Green Or Black:12"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "Last Quarter",
+                "featureColorPoints": "10",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:17"
+                    },
+                    {
+                        "1": "Green Or Black:3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sno": "6",
+        "breed": "Talisayon",
+        "color": "Grey/Talisayin/Talisayon",
+        "picture": "talisayon",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "Full Moon",
+                "featureColorPoints": "14",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:10"
+                    },
+                    {
+                        "1": "Green Or Black:6"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sno": "7",
+        "breed": "White",
+        "color": "White/Puti/Ogis",
+        "picture": "white",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "New Moon",
+                "featureColorPoints": "12",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:18"
+                    },
+                    {
+                        "1": "Green Or Black:12"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "Last Quarter",
+                "featureColorPoints": "10",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:17"
+                    },
+                    {
+                        "1": "Green Or Black:3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sno": "8",
+        "breed": "Dark Red",
+        "color": "Dark Red/Pula Sunog/Puwa nga Latum",
+        "picture": "darkred",
+        "luckyDay": [
+            {
+                "no": "1",
+                "name": "New Moon",
+                "featureColorPoints": "15",
+                "legColorRating": [
+                    {
+                        "0": "Yellow Or White:18"
+                    },
+                    {
+                        "1": "Green Or Black:12"
+                    }
+                ]
+            },
+            {
+                "no": "2",
+                "name": "First Quarter",
+                "featureColorPoints": "14",
+                "legColorRating": [
+                    {
+                        "0": "Green Or White:14"
+                    },
+                    {
+                        "1": "Yellow Or Black:2"
+                    }
+                ]
+            }
+        ]
+    }
 ]
