@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC412D6C1A6D2F2000C3AF05 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DC412D6A1A6D2F2000C3AF05 /* first.png */; };
+		DC412D6D1A6D2F2000C3AF05 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DC412D6B1A6D2F2000C3AF05 /* second.png */; };
+		DC412D701A6D34C200C3AF05 /* chickenDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */; };
 		DCEAD3B51A6D1966004EA87D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEAD3B41A6D1966004EA87D /* Foundation.framework */; };
 		DCEAD3B71A6D1966004EA87D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEAD3B61A6D1966004EA87D /* CoreGraphics.framework */; };
 		DCEAD3B91A6D1966004EA87D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEAD3B81A6D1966004EA87D /* UIKit.framework */; };
@@ -21,6 +24,7 @@
 		DCEAD3D61A6D1966004EA87D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEAD3B81A6D1966004EA87D /* UIKit.framework */; };
 		DCEAD3DE1A6D1966004EA87D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCEAD3DC1A6D1966004EA87D /* InfoPlist.strings */; };
 		DCEAD3E01A6D1966004EA87D /* Lucky_ChickenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEAD3DF1A6D1966004EA87D /* Lucky_ChickenTests.m */; };
+		DCEAD3EA1A6D1CC7004EA87D /* chickens.json in Resources */ = {isa = PBXBuildFile; fileRef = DCEAD3E91A6D1CC7004EA87D /* chickens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC412D6A1A6D2F2000C3AF05 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		DC412D6B1A6D2F2000C3AF05 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		DC412D6E1A6D34C200C3AF05 /* chickenDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chickenDetails.h; sourceTree = "<group>"; };
+		DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chickenDetails.m; sourceTree = "<group>"; };
 		DCEAD3B11A6D1966004EA87D /* Lucky Chicken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lucky Chicken.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEAD3B41A6D1966004EA87D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCEAD3B61A6D1966004EA87D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,7 @@
 		DCEAD3DB1A6D1966004EA87D /* Lucky ChickenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lucky ChickenTests-Info.plist"; sourceTree = "<group>"; };
 		DCEAD3DD1A6D1966004EA87D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCEAD3DF1A6D1966004EA87D /* Lucky_ChickenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lucky_ChickenTests.m; sourceTree = "<group>"; };
+		DCEAD3E91A6D1CC7004EA87D /* chickens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chickens.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC412D691A6D2F2000C3AF05 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DC412D6A1A6D2F2000C3AF05 /* first.png */,
+				DC412D6B1A6D2F2000C3AF05 /* second.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		DCEAD3A81A6D1966004EA87D = {
 			isa = PBXGroup;
 			children = (
+				DC412D691A6D2F2000C3AF05 /* Images */,
 				DCEAD3BA1A6D1966004EA87D /* Lucky Chicken */,
 				DCEAD3D91A6D1966004EA87D /* Lucky ChickenTests */,
 				DCEAD3B31A6D1966004EA87D /* Frameworks */,
@@ -115,8 +134,11 @@
 				DCEAD3C31A6D1966004EA87D /* AppDelegate.h */,
 				DCEAD3C41A6D1966004EA87D /* AppDelegate.m */,
 				DCEAD3C61A6D1966004EA87D /* Main.storyboard */,
+				DC412D6E1A6D34C200C3AF05 /* chickenDetails.h */,
+				DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */,
 				DCEAD3C91A6D1966004EA87D /* ViewController.h */,
 				DCEAD3CA1A6D1966004EA87D /* ViewController.m */,
+				DCEAD3E91A6D1CC7004EA87D /* chickens.json */,
 				DCEAD3CC1A6D1966004EA87D /* Images.xcassets */,
 				DCEAD3BB1A6D1966004EA87D /* Supporting Files */,
 			);
@@ -228,9 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEAD3EA1A6D1CC7004EA87D /* chickens.json in Resources */,
 				DCEAD3CD1A6D1966004EA87D /* Images.xcassets in Resources */,
 				DCEAD3BF1A6D1966004EA87D /* InfoPlist.strings in Resources */,
+				DC412D6D1A6D2F2000C3AF05 /* second.png in Resources */,
 				DCEAD3C81A6D1966004EA87D /* Main.storyboard in Resources */,
+				DC412D6C1A6D2F2000C3AF05 /* first.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +276,7 @@
 			files = (
 				DCEAD3CB1A6D1966004EA87D /* ViewController.m in Sources */,
 				DCEAD3C51A6D1966004EA87D /* AppDelegate.m in Sources */,
+				DC412D701A6D34C200C3AF05 /* chickenDetails.m in Sources */,
 				DCEAD3C11A6D1966004EA87D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +482,7 @@
 				DCEAD3E51A6D1966004EA87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCEAD3E61A6D1966004EA87D /* Build configuration list for PBXNativeTarget "Lucky ChickenTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +491,7 @@
 				DCEAD3E81A6D1966004EA87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

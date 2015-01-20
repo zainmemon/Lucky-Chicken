@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
++(NSMutableArray*)chickenArray;
+
 @end

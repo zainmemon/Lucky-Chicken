@@ -1,0 +1,76 @@
+[
+{
+    "sno":"0",
+    "breed": "Blue Miner",
+    "color": "Blue/Abuhin/Abuhon",
+    "picture":"first",
+    "luckyDay":[
+        {
+            "no":"1",
+            "name":"Full Moon",
+            "featureColorPoints":"12",
+            "legColorPointsYelloWhite":"10",
+            "legColorPointsGreenBlueBlack":"6"
+        },
+        {
+            "no":"2",
+            "name":"Last Quarter",
+            "featureColorPoints":"11",
+            "legColorPointsYelloWhite":"17",
+            "legColorPointsGreenBlueBlack":"3"
+        }
+    ]
+},
+{
+    "sno":"1",
+    "breed": "Lemon 84",
+    "color": "Red/Pula Matingkad/Puwa Hayag",
+    "picture":"second",
+    "luckyDay":[
+        {
+            "no":"1",
+            "name":"Full Moon",
+            "featureColorPoints":"12",
+            "legColorPointsYelloWhite":"10",
+            "legColorPointsGreenBlueBlack":"6"
+        },
+        {
+            "no":"2",
+            "name":"Last Quarter",
+            "featureColorPoints":"11",
+            "legColorPointsYelloWhite":"17",
+            "legColorPointsGreenBlueBlack":"3"
+        },
+        {
+            "no":"3",
+            "name":"Third Quarter",
+            "featureColorPoints":"17",
+            "legColorPointsYelloWhite":"21",
+            "legColorPointsGreenBlueBlack":"20"
+        }
+    ]
+},
+{
+ "sno":"2",
+ "breed": "Lemon 84",
+ "color": "Red/Pula Matingkad/Puwa Hayag",
+ "picture":"second",
+ "luckyDay":[
+             {
+             "no":"1",
+             "name":"Full Moon",
+             "featureColorPoints":"12",
+             "legColorPointsYelloWhite":"10",
+             "legColorPointsGreenBlueBlack":"6"
+             },
+             {
+             "no":"2",
+             "name":"Last Quarter",
+             "featureColorPoints":"11",
+             "legColorPointsYelloWhite":"17",
+             "legColorPointsGreenBlueBlack":"3"
+             }
+        ]
+ }
+
+]
