@@ -11,6 +11,8 @@
 
 @interface chickenDetails (){
     UIScrollView *scroll;
+    int screenWidth;
+    int screenHeight;
 }
 
 @end
@@ -33,58 +35,63 @@
     
     UIImage *chickenImage = [UIImage imageNamed:chickenImageName];
     self.chickenImage.image = chickenImage;
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    screenWidth = screenRect.size.width;
+    screenHeight = screenRect.size.height;
     
+    NSLog(@"The screen width is %d",screenWidth);
+    NSLog(@"The screen Height is %d",screenHeight);
     [self drawLabels];
     [self.view addSubview:scroll];
 }
 
 -(void)drawLabels
 {
-    CGRect rect = CGRectMake(0,80,320,1080);
-    scroll = [[UIScrollView alloc] initWithFrame:rect];
-    int y = 200;
-    
     int luckyDayCount = [[[[ViewController chickenArray] valueForKey:@"luckyDay"]objectAtIndex:[self.chickenID intValue]]count];
     
-    NSLog(@"the luckyDay count is %d",luckyDayCount);
+    CGRect rect = CGRectMake(0,270,320,screenHeight - 270);
+    scroll = [[UIScrollView alloc] initWithFrame:rect];
+    int y = 0;
+    int gap = 25;
     
     for (int i=0; i < luckyDayCount ; i++)
     {
         [self makeLabel:y label:@"Name" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"name"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
         
-        y+=40;
+        y+= gap;
         
         [self makeLabel:y label:@"Feather Color Rating" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"featureColorPoints"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
         
-        y+=40;
+        y+= gap;
         
         [self makeLabel:y label:@"Leg Color Rating" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorPointsYelloWhite"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
         
-        y+=40;
+        y+= gap;
         
         [self makeLabel:y label:@"Leg Colour GBB" value:[[[[[ViewController chickenArray] valueForKey:@"luckyDay"]valueForKey:@"legColorPointsGreenBlueBlack"]objectAtIndex:[self.chickenID intValue]] objectAtIndex:i]];
         
-        y+=40;
+        y+= gap+10;
         
     }
     
-    scroll.contentSize = CGSizeMake(320, y+200);
+    scroll.contentSize = CGSizeMake(320, (luckyDayCount * 105));
     scroll.showsHorizontalScrollIndicator = YES;
     scroll.showsVerticalScrollIndicator = YES;
 }
 
-
 -(void)makeLabel:(int)Yposition label:(NSString*)label value:(NSString*)value
 {
-    UILabel *fourth_label = [[UILabel alloc]initWithFrame:CGRectMake(20,Yposition,150,30)];
-    [fourth_label setText:label];
-    [fourth_label setTextColor:[UIColor blackColor]];
-    [scroll addSubview:fourth_label];
+    UILabel *jsonLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,Yposition,150,20)];
+    [jsonLabel setText:label];
+    [jsonLabel setTextColor:[UIColor blackColor]];
+    [jsonLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.f]];
+    [scroll addSubview:jsonLabel];
     
-    UILabel *fourth_value = [[UILabel alloc]initWithFrame:CGRectMake(200,Yposition,100,30)];
-    [fourth_value setTextColor:[UIColor blackColor]];
-    [fourth_value setText:value];
-    [scroll addSubview:fourth_value];
+    UILabel *jsonValue = [[UILabel alloc]initWithFrame:CGRectMake(200,Yposition,100,20)];
+    [jsonValue setTextColor:[UIColor blackColor]];
+    [jsonValue setText:value];
+    [jsonValue setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:13.f]];
+    [scroll addSubview:jsonValue];
 }
 
 - (void)didReceiveMemoryWarning

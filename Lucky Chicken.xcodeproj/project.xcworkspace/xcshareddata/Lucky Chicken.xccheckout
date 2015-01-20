@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A3B2D920-EB22-4F4B-A786-5C46385EDDCD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lucky Chicken</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E32213B6ED409836211EE56120402275F3AC7B7F</key>
+		<string>https://github.com/zainmemon/Lucky-Chicken.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lucky Chicken.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E32213B6ED409836211EE56120402275F3AC7B7F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zainmemon/Lucky-Chicken.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E32213B6ED409836211EE56120402275F3AC7B7F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E32213B6ED409836211EE56120402275F3AC7B7F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lucky-Chicken</string>
+		</dict>
+	</array>
+</dict>
+</plist>
