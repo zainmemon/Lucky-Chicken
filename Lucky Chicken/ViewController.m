@@ -29,6 +29,9 @@ static NSMutableArray *chickensArray;
 {
     [super viewDidLoad];
     
+    [self.view setBackgroundColor:[UIColor colorWithRed:130.0/255.0f green:0.0/255.0f blue:3.0/255.0f alpha:1.0f]];
+    
+    self.title = @"Lucky Chicken";
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     screenWidth = screenRect.size.width;
     screenHeight = screenRect.size.height;
@@ -107,7 +110,7 @@ static NSMutableArray *chickensArray;
         NSString *chickenBreedString = [[chickensArray valueForKey:@"breed"] objectAtIndex:i];
         chikenBreedLabel.text = chickenBreedString;
         chikenBreedLabel.textAlignment = NSTextAlignmentCenter;
-        chikenBreedLabel.textColor= [UIColor blackColor];
+        chikenBreedLabel.textColor= [UIColor whiteColor];
         [chikenBreedLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:11.f]];
         [scroll addSubview:chikenBreedLabel];
     }
