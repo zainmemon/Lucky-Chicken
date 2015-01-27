@@ -16,16 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm5-Bz-Dz8">
+                                <rect key="frame" x="76" y="82" width="168" height="105"/>
+                                <state key="normal" backgroundImage="moon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="n68-JQ-9La" kind="push" id="SH6-Na-Huo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="d4X-KM-3Ym"/>
                     <connections>
+                        <outlet property="fixed_image" destination="hm5-Bz-Dz8" id="EUV-my-fne"/>
                         <segue destination="TpA-K9-C5T" kind="push" identifier="chickenDetails" id="Llq-dz-fpm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="891" y="67"/>
+        </scene>
+        <!--Default-->
+        <scene sceneID="0b2-Wf-W7n">
+            <objects>
+                <viewController id="n68-JQ-9La" customClass="Default" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vnW-5d-neB"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Nt-C8-Hc6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="urp-dc-qWU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nGB-vA-loy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wl0-G3-iCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="720"/>
         </scene>
         <!--Chicken Details-->
         <scene sceneID="yS0-Gf-dgJ">
@@ -101,6 +132,9 @@
             <point key="canvasLocation" x="226" y="67"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="moon" width="1242" height="782"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

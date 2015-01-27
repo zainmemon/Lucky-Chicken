@@ -14,4 +14,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *color;
 @property (weak, nonatomic) IBOutlet UIImageView *chickenImage;
 
+
 @end

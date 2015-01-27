@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73041981A766DE200C2BB4E /* Default.m in Sources */ = {isa = PBXBuildFile; fileRef = B73041971A766DE200C2BB4E /* Default.m */; };
 		B76CFCAB1A6E613100D99161 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = B76CFCAA1A6E613100D99161 /* Images */; };
 		DC412D701A6D34C200C3AF05 /* chickenDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */; };
 		DCEAD3B51A6D1966004EA87D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEAD3B41A6D1966004EA87D /* Foundation.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B73041961A766DB200C2BB4E /* Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Default.h; path = ../Default.h; sourceTree = "<group>"; };
+		B73041971A766DE200C2BB4E /* Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Default.m; path = ../Default.m; sourceTree = "<group>"; };
 		B76CFCAA1A6E613100D99161 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		DC412D6E1A6D34C200C3AF05 /* chickenDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chickenDetails.h; sourceTree = "<group>"; };
 		DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chickenDetails.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				DCEAD3C31A6D1966004EA87D /* AppDelegate.h */,
 				DCEAD3C41A6D1966004EA87D /* AppDelegate.m */,
 				DCEAD3C61A6D1966004EA87D /* Main.storyboard */,
+				B73041961A766DB200C2BB4E /* Default.h */,
+				B73041971A766DE200C2BB4E /* Default.m */,
 				DC412D6E1A6D34C200C3AF05 /* chickenDetails.h */,
 				DC412D6F1A6D34C200C3AF05 /* chickenDetails.m */,
 				DCEAD3C91A6D1966004EA87D /* ViewController.h */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73041981A766DE200C2BB4E /* Default.m in Sources */,
 				DCEAD3CB1A6D1966004EA87D /* ViewController.m in Sources */,
 				DCEAD3C51A6D1966004EA87D /* AppDelegate.m in Sources */,
 				DC412D701A6D34C200C3AF05 /* chickenDetails.m in Sources */,

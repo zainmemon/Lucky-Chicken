@@ -29,6 +29,8 @@ static NSMutableArray *chickensArray;
 {
     [super viewDidLoad];
     
+   // [self.fixed_image setBackgroundImage:[UIImage imageNamed:@"white"] forState:UIControlStateNormal];
+    
     [self.view setBackgroundColor:[UIColor colorWithRed:130.0/255.0f green:0.0/255.0f blue:3.0/255.0f alpha:1.0f]];
     
     self.title = @"Lucky Chicken";
@@ -66,7 +68,7 @@ static NSMutableArray *chickensArray;
 -(void)generate_views
 {
     
-    CGRect rect = CGRectMake(0,20,320,screenHeight-50);
+    CGRect rect = CGRectMake(0,200,320,screenHeight-50);
     scroll = [[UIScrollView alloc] initWithFrame:rect];
     
     //loop for open
@@ -115,7 +117,7 @@ static NSMutableArray *chickensArray;
         [scroll addSubview:chikenBreedLabel];
     }
     
-    scroll.contentSize = CGSizeMake(320, y+120);
+    scroll.contentSize = CGSizeMake(320, y+275);
     scroll.showsHorizontalScrollIndicator = YES;
     scroll.showsVerticalScrollIndicator = YES;
 }

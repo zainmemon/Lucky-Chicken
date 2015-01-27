@@ -11,5 +11,6 @@
 @interface ViewController : UIViewController
 
 +(NSMutableArray*)chickenArray;
+@property (weak, nonatomic) IBOutlet UIButton *fixed_image;
 
 @end
